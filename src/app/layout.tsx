@@ -15,8 +15,10 @@ export const metadata: Metadata = {
   keywords: ["chaos theory","complexity","emergence","nonlinear","butterfly effect","feedback loops","phase transition","混沌理论","复杂性","涌现","非线性","蝴蝶效应"],
   authors: [{ name: "Gewenbo", url: "https://psyverse.fun" }],
   alternates: { canonical: "/", languages: { en: "/", "zh-CN": "/", "x-default": "/" } },
-  openGraph: { title: "Chaos OS", description: "Complexity, emergence, and nonlinear dynamics.", url: "https://chaos-os.psyverse.fun/", siteName: "Psyverse", type: "website" },
-  twitter: { card: "summary_large_image", title: "Chaos OS", description: "A system to understand complexity and emergence." },
+  openGraph: {
+    images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: "Chaos OS · 混沌操作系统" }], title: "Chaos OS", description: "Complexity, emergence, and nonlinear dynamics.", url: "https://chaos-os.psyverse.fun/", siteName: "Psyverse", type: "website" },
+  twitter: {
+    images: ["/twitter-image.png"], card: "summary_large_image", title: "Chaos OS", description: "A system to understand complexity and emergence." },
   robots: { index: true, follow: true },
   other: { "theme-color": "#040810" },
 };
